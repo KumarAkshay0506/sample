@@ -1,0 +1,18 @@
+{% block body %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eartquake App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Dashboard<small> Welcome {{session.username}} Time {{session.time}}</small></h1>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <a class="btn btn-success" href="/createDB">Create Database</a>
+    <a class="btn btn-success" href="/randomQueries">Run Random Queries</a>
+    <a class="btn btn-success" href="/searchByCityQuery">Search by City Name</a>
+    <a class="btn btn-success" href="/searchByRangeQuery">Search by Range</a>
+  </body>
+</html>
+{% endblock %}

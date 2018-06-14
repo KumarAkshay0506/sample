@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Result<small> Time taken: {{session.time_diff}}  Result Count : {{session.result_count}}</small></h1>
+
+  <hr>
+
+  <table class="table table-striped">
+    <tr>
+      <th>Given Name</th>
+      <th>SurName</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Age</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+    {% for result in results %}
+        <tr>
+          <td>{{result[0]}}</td>
+          <td>{{result[1]}}</td>
+          <td>{{result[2]}}</td>
+          <td>{{result[3]}}</td>
+          <td>{{result[4]}}</td>
+          <td>{{result[5]}}</td>
+          <td>{{result[6]}}</td>
+        </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

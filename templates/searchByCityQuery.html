@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Search according to Place</h1>
+  {% if error %}
+   <p class=error><strong>Error:</strong> {{ error }}
+     <h1>error</h1>
+  {% endif %}
+  <form action="" method=post>
+    <dl>
+      <dt>state:
+      <dd><input type=text name="city" >
+      <dd><input type="submit" value=Search>
+    </dl>
+  </form>
+{% endblock %}

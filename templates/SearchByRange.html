@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Search Within Distance</h1>
+  {% if error %}
+   <p class=error><strong>Error:</strong> {{ error }}
+     <h1>error</h1>
+  {% endif %}
+  <form action="" method=post>
+    <dl>
+      <dt>latitude Start:
+      <dd><input type=text name="latitudeStart" >
+      <dt>latitude End:
+      <dd><input type=text name="latitudeEnd">
+      <dt>Age Lower:
+      <dd><input type=text name="age_lower" >
+      <dt>Age Upper:
+      <dd><input type=text name="age_upper" >
+      <dd><input type="submit" value=Search>
+    </dl>
+  </form>
+{% endblock %}

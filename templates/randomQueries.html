@@ -1,0 +1,16 @@
+{% block body %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eartquake App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Random Queries<small> Welcome {{session.username}} </small></h1>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <a class="btn btn-success" href="/random1000queries">Run Random 1000 queries</a>
+    <a class="btn btn-success" href="/restrictedQueries">Run Restricted Set of Queries</a>
+  </body>
+</html>
+{% endblock %}
